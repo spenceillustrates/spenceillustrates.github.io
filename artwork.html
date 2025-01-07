@@ -5,7 +5,7 @@
 <meta content="width=device-width">
 </head>
 
-<body onLoad="populateImageColumns()">
+<body onLoad="populateArtwork()">
 
 <!-- NAVBAR -->
 <div class="navbar">
@@ -15,10 +15,15 @@
     <a>Instagram</a>
 </div>
 
-<!-- ARTWORK DISPLAY -->
+
+<!-- TITLE (no default innerHTML since this shows up when page is loading) -->
+<div class="pageTitle" id="artworkTitle"></div>
+<!-- DESCRIPTION-->
+<div class="pageDescription" id="artworkDescription"></div>
+
+<!-- ARTWORK DISPLAY-->
 <div class="main-column">
-    <div class="display-column" id="leftColumn" style="float: left"></div>
-    <div class="display-column" id="rightColumn" style="float: right"></div>
+    <div class="display-column" id="column" style="margin: 0 auto;"></div>
 </div>
 
 </body>
