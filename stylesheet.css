@@ -1,35 +1,63 @@
 /*HEADER*/
 body {padding: 0; margin:0;}
 
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.3;
+	}
+}
+
 /*NAVIGATION BAR*/
-.navbar{
+.navbar{        /*Bar*/
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
+    z-index: 999;       /*Always on top*/
 
     overflow: hidden;
-    background-color: red;
+    background-color: #E0F3D4;
 }
 
-.navbar a {
+.navbar a {     /*Elements*/
     float: right;
     text-align: center;
     padding: 10px;
-    font-size: 11px;
+    font-size: 22px;
+}
+
+.navbar a.active {
+    float: right;
+    text-align: center;
+    padding: 10px;
+    color: red;
+    font-size: 22px;
 }
 
 .navbar a.title {
     float:left;
     text-align: center;
-    background-color: black;
-    color: red;
-    font-size: 14px;
+    font-size: 26px;
+    padding-left: 5%;
 }
+
+
 
 /*DISPLAY COLUMNS*/
 .main-column {
-    padding-top: 50px;
+    padding-top: 70px;
     margin: 0 auto;
     width: 95%;
 }
@@ -41,15 +69,45 @@ body {padding: 0; margin:0;}
 
 .display-column div {   /*Image container*/
     padding-bottom: 50px;
+    position: relative;
 }
 
 .display-column div img {   /*Actual image*/
     width: 100%;
     height: auto;
+    opacity: 1;
+}
+
+.display-column div img.fade {
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+}
+
+.display-column div img.fade:hover {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+
+    opacity: 0.3;
+    animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
 }
 
 .display-column div a {     /*Caption*/
-    color: green;
+    color: #000000;
+    font-size: 26px;
+}
+
+.display-column div a.overlayed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 /*PAGE TEXT*/
@@ -58,7 +116,7 @@ body {padding: 0; margin:0;}
     text-align: center;
     width: 30%;
 
-    padding-top: 50px;
+    padding-top: 70px;
     font-size: 20px;
     text-decoration: underline;
 }

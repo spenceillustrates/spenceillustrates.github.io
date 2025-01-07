@@ -40,12 +40,14 @@ async function populateImageColumns() {
         .then(data => {
             let newImg = document.createElement("img");
             newImg.src = URL.createObjectURL(data);
+            newImg.classList.add("fade");
             newImg.onload = function() {    // need to load the image before we do anything else
                 let newText = document.createElement("a");  // image title
                 newText.innerHTML = res[i].title;
-
+                newText.classList.add("overlayed")
+                
                 let newPiece = document.createElement("div");   // div wrapper
-                newPiece.append(newImg)
+                newPiece.append(newImg);
                 newPiece.append(newText);
                 
                 newPiece.onclick = function() {     // for changing to single view
