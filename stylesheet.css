@@ -1,3 +1,9 @@
+/*FOR LINK DECORATION*/
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
 /*HEADER*/
 body {padding: 0; margin:0;}
 
@@ -134,5 +140,15 @@ body {padding: 0; margin:0;}
     padding-top: 20px;
     color: #FFFFFF;
 	font-size: 16px;
-    font-style: italic;
+}
+
+/*ABOUT PAGE*/
+.portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	width: 500px; 
+	height: auto; 
+	padding-top: 20px;
 }
