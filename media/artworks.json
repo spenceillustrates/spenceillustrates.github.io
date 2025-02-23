@@ -1,14 +1,8 @@
 {"pieces":[
-    {"title": "Deer", "folder": "Deer", "items": 1},
-    {"title": "Dogs", "folder": "Dog", "items": 1},
-    {"title": "Skull", "folder": "Skull", "items": 1},
-    {"title": "Signature", "folder": "untitled", "items": 2},
-
-    {"title": "Skull", "folder": "Skull", "items": 1},
-    {"title": "Signature", "folder": "untitled", "items": 2},
-    {"title": "Skull", "folder": "Skull", "items": 1},
-    {"title": "Signature", "folder": "untitled", "items": 2},
-    {"title": "Skull", "folder": "Skull", "items": 1},
-    {"title": "Signature", "folder": "untitled", "items": 2},
-    {"title": "Skull", "folder": "Skull", "items": 1}
+    {"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5},
+	{"title": "Vampire's Lair", "folder": "vampires_lair", "items": 1},
+	{"title": "Shielded From The Cold", "folder": "shielded_from_the_cold", "items": 1},
+	{"title": "Forgotten City", "folder": "forgotten_city", "items": 1},
+	{"title": "Eusexua - FKA Twigs (reimagined cover)", "folder": "eusexua", "items": 1},
+	{"title": "Warrior Cats - Into The Wild Personal Project", "folder": "warrior_cats", "items": 6}
 ]}

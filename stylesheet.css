@@ -28,36 +28,39 @@ body {padding: 0; margin:0;}
     z-index: 999;       /*Always on top*/
 
     overflow: hidden;
-    background-color: #E0F3D4;
+    background-color: #FFFFFF;
 }
 
 .navbar a {     /*Elements*/
     float: right;
     text-align: center;
     padding: 10px;
-    font-size: 22px;
+	padding-top: 20px;
+    font-size: 28px;
 }
 
 .navbar a.active {
     float: right;
     text-align: center;
     padding: 10px;
-    color: red;
-    font-size: 22px;
+	padding-top: 20px;
+    text-decoration: underline;
+    font-size: 28px;
 }
 
-.navbar a.title {
+.navbar img.logo {
     float:left;
     text-align: center;
     font-size: 26px;
     padding-left: 5%;
+	height: 80px;
 }
 
 
 
 /*DISPLAY COLUMNS*/
 .main-column {
-    padding-top: 70px;
+    padding-top: 100px;
     margin: 0 auto;
     width: 95%;
 }
@@ -99,6 +102,7 @@ body {padding: 0; margin:0;}
 
 .display-column div a {     /*Caption*/
     color: #000000;
+	color: #FFFFFF;
     font-size: 26px;
 }
 
@@ -116,8 +120,9 @@ body {padding: 0; margin:0;}
     text-align: center;
     width: 30%;
 
-    padding-top: 70px;
-    font-size: 20px;
+    padding-top: 100px;
+    color: #FFFFFF;
+	font-size: 26px;
     text-decoration: underline;
 }
 
@@ -127,6 +132,7 @@ body {padding: 0; margin:0;}
     width: 30%;
 
     padding-top: 20px;
-    font-size: 14px;
+    color: #FFFFFF;
+	font-size: 16px;
     font-style: italic;
 }

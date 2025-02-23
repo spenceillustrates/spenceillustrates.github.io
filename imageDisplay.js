@@ -34,37 +34,33 @@ async function populateImageColumns() {
     let rcHeight = 0;
 
     let res = await loadJSON(mediaPath+"artworks.json");
-    for (let i = 0; i < res.length; i++) {
-        getFirstImage(mediaPath, res[i].folder) // we only need to load the first image from the artwork folders. The rest is shown on the artwork page
+    let addToLeft = true
+	for (let i = 0; i < res.length; i++) {
+		let newImg = document.createElement("img");
+        newImg.classList.add("fade");
+			
+		let newText = document.createElement("a");  // image title (text not added until image is loaded)
+		newText.classList.add("overlayed")
+			
+		let newPiece = document.createElement("div");   // div wrapper
+        newPiece.append(newText);
+        newPiece.onclick = function() {     // for changing to single view
+			window.localStorage.setItem('title', (res[i].title+""));
+            window.localStorage.setItem('folder', (res[i].folder+""));
+            window.location.href=("artwork.html");
+        };
+		
+		if (addToLeft) {lc.append(newPiece);}
+		else {rc.append(newPiece);}
+		addToLeft = !addToLeft
+		
+		getFirstImage(mediaPath, res[i].folder) // we only need to load the first image from the artwork folders. The rest is shown on the artwork page
         .then(res => res.blob())
         .then(data => {
-            let newImg = document.createElement("img");
-            newImg.src = URL.createObjectURL(data);
-            newImg.classList.add("fade");
-            newImg.onload = function() {    // need to load the image before we do anything else
-                let newText = document.createElement("a");  // image title
-                newText.innerHTML = res[i].title;
-                newText.classList.add("overlayed")
-                
-                let newPiece = document.createElement("div");   // div wrapper
-                newPiece.append(newImg);
-                newPiece.append(newText);
-                
-                newPiece.onclick = function() {     // for changing to single view
-                    window.localStorage.setItem('title', (res[i].title+""));
-                    window.localStorage.setItem('folder', (res[i].folder+""));
-                    window.location.href=("artwork.html");
-                };
-
-                // add the new div to the column with the lowest current height
-                if (lcHeight <= rcHeight) {
-                    lc.append(newPiece);
-                    lcHeight += newImg.height;
-                }
-                else {
-                    rc.append(newPiece);
-                    rcHeight += newImg.height;
-                }
+			newImg.src = URL.createObjectURL(data);
+			newImg.onload = function() {    // add image to div once loaded
+				newText.innerHTML = res[i].title;
+				newPiece.append(newImg);
             }
         })
     }
