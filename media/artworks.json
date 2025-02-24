@@ -1,5 +1,9 @@
 {"pieces":[
     {"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5},
+	{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 1},
+	{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 2},
+	{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 3},
+	{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 4},
 	{"title": "Vampire's Lair", "folder": "vampires_lair", "items": 1},
 	{"title": "Shielded From The Cold", "folder": "shielded_from_the_cold", "items": 1},
 	{"title": "Forgotten City", "folder": "forgotten_city", "items": 1},

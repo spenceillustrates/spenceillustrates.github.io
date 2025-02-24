@@ -18,12 +18,11 @@ async function getImage(path) {
     .catch(err => {console.log(err);})
 }
 
-async function getFirstImage(path, folderPath) {
-    console.log("first image starts with: " + folderPath);
+async function getImageWithIndex(path, folderPath, idx) {
     let mainPath = path + folderPath;
     locations = await loadJSON(mainPath+"/media.json");
 
-    return getImage(mainPath+"/"+locations[0].path)
+    return getImage(mainPath+"/"+locations[idx].path)
 }
 
 // for index.html
@@ -54,7 +53,13 @@ async function populateImageColumns() {
 		else {rc.append(newPiece);}
 		addToLeft = !addToLeft
 		
-		getFirstImage(mediaPath, res[i].folder) // we only need to load the first image from the artwork folders. The rest is shown on the artwork page
+		selectedIndex = 0
+		if (res[i].hasOwnProperty('altIndex')) {
+			selectedIndex = res[i].altIndex
+		}
+		else {
+		}
+		getImageWithIndex(mediaPath, res[i].folder, selectedIndex) // we only need to load the first image from the artwork folders. The rest is shown on the artwork page
         .then(res => res.blob())
         .then(data => {
 			newImg.src = URL.createObjectURL(data);
