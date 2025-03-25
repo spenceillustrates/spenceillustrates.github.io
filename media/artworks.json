@@ -8,5 +8,11 @@
 	{"title": "Shielded From The Cold", "folder": "shielded_from_the_cold", "items": 1},
 	{"title": "Forgotten City", "folder": "forgotten_city", "items": 1},
 	{"title": "Eusexua - FKA Twigs (reimagined cover)", "folder": "eusexua", "items": 1},
-	{"title": "Warrior Cats - Into The Wild Personal Project", "folder": "warrior_cats", "items": 6}
+	{"title": "Warrior Cats - Into The Wild Personal Project", "folder": "warrior_cats", "items": 6},
+	{"title": "Lost and Found", "folder": "lost_and_found", "items": 1},
+	{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 5},
+	{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 3},
+    {"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 4},
+	{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 2},
+	{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 1}
 ]}

@@ -89,21 +89,23 @@ async function populateArtwork() {
     const col = document.getElementById("column");
     let paths = await loadJSON(folderPath+"/media.json");
     for (let i = 0; i < paths.length; i++) {
-        getImage(folderPath+"/"+paths[i].path)
-        .then(res => res.blob())
-        .then(data => {
-            let newImg = document.createElement("img");
-            newImg.src = URL.createObjectURL(data);
-            newImg.onload = function() {    // need to load the image before we do anything else
-                let newText = document.createElement("a");  // image title
-                newText.innerHTML = paths[i].title;
+		if (paths[i].title != "DONOTSHOW") {
+			getImage(folderPath+"/"+paths[i].path)
+			.then(res => res.blob())
+			.then(data => {
+				let newImg = document.createElement("img");
+				newImg.src = URL.createObjectURL(data);
+				newImg.onload = function() {    // need to load the image before we do anything else
+					let newText = document.createElement("a");  // image title
+					newText.innerHTML = paths[i].title;
 
-                let newPiece = document.createElement("div");   // div wrapper
-                newPiece.append(newImg)
-                newPiece.append(newText);
+					let newPiece = document.createElement("div");   // div wrapper
+					newPiece.append(newImg)
+					newPiece.append(newText);
 
-                col.append(newPiece);
-            }
-        })
+					col.append(newPiece);
+				}
+			})
+		}
     }
 }
