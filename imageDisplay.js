@@ -33,6 +33,7 @@ async function populateImageColumns() {
     let rcHeight = 0;
 
     let res = await loadJSON(mediaPath+"artworks.json");
+	res = res.reverse()
     let addToLeft = true
 	for (let i = 0; i < res.length; i++) {
 		let newImg = document.createElement("img");
