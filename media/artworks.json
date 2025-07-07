@@ -1,28 +1,45 @@
 {"pieces":[
-    {"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5},
-	{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 1},
-	{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 2},
-	{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 3},
-	{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 4},
-	{"title": "Vampire's Lair", "folder": "vampires_lair", "items": 1},
-	{"title": "Shielded From The Cold", "folder": "shielded_from_the_cold", "items": 1},
-	{"title": "Forgotten City", "folder": "forgotten_city", "items": 1},
-	{"title": "Eusexua - FKA Twigs (reimagined cover)", "folder": "eusexua", "items": 1},
-	{"title": "Warrior Cats - Into The Wild Personal Project", "folder": "warrior_cats", "items": 6},
-	{"title": "Lost and Found", "folder": "lost_and_found", "items": 1},
-	{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 5},
-	{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 3},
-    {"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 4},
-	{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 2},
-	{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 1},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 0},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 2},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 3},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 4},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 5},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 6},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 7},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 8},
-	{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 9},
-	{"title": "Pierrot Clowns", "folder": "pierrot_clowns", "items": 1}
+	{"collage": [
+		{"title": "Witch's Garden", "folder": "witchs_garden", "items": 1}
+	]},
+	{"collage": [
+		{"title": "Pierrot Clowns", "folder": "pierrot_clowns", "items": 1}
+	]},
+	{"collage": [
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 0},
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 2},
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 3},
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 4},
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 5},
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 6},
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 7},
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 8},
+		{"title": "Hamlet Personal Project", "folder": "hamlet_personal_project", "items": 18, "altIndex": 9}
+	]},
+	{"collage": [
+		{"title": "Shielded From The Cold", "folder": "shielded_from_the_cold", "items": 1}
+	]},
+	{"collage": [
+		{"title": "Vampire's Lair", "folder": "vampires_lair", "items": 1}
+	]},
+	{"collage": [
+		{"title": "Forgotten City", "folder": "forgotten_city", "items": 1}
+	]},
+	{"collage": [
+		{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 5},
+		{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 3},
+		{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 1},
+		{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 2},
+		{"title": "Poems from a Witch's Pocket - Personal Project", "folder": "witch_pocket", "items": 6, "altIndex": 4}
+	]},
+	{"collage": [
+		{"title": "Lost and Found", "folder": "lost_and_found", "items": 1}
+	]},
+	{"collage": [
+		{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5},
+		{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 4},
+		{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 2},
+		{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 3},
+		{"title": "Blood Meridian Personal Project", "folder": "blood_meridian_personal_project", "items": 5, "altIndex": 1}
+	]}
 ]}

@@ -62,13 +62,73 @@ body {padding: 0; margin:0;}
 	height: 80px;
 }
 
-
-
-/*DISPLAY COLUMNS*/
+/*HOMEPAGE*/
 .main-column {
-    padding-top: 100px;
+	padding-top: 50px;
     margin: 0 auto;
     width: 95%;
+}
+
+.main-column div.rowContainer {
+	overflow:hidden;
+	height:1%;
+	width:100%;
+	height:fit-content;
+}
+
+.main-column div div  {   
+    position: relative;
+	width: 49%;
+	padding-top: 10px;
+}
+
+.main-column div img {   
+    width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+.main-column div img.fade {
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+}
+
+.main-column div img.fade:hover {
+    cursor: pointer;
+
+    opacity: 0.3;
+    animation-name: fadeOutOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+}
+
+.main-column div a {     
+    color: #000000;
+	color: #FFFFFF;
+    font-size: 26px;
+}
+
+.main-column div a.overlayed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/*ARTWORK PAGE*/
+.pageTitle {
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+
+    padding-top: 100px;
+    color: #FFFFFF;
+	font-size: 26px;
+    text-decoration: underline;
 }
 
 .display-column {
@@ -87,51 +147,13 @@ body {padding: 0; margin:0;}
     opacity: 1;
 }
 
-.display-column div img.fade {
-    animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 0.2s;
-}
-
-.display-column div img.fade:hover {
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-
-    opacity: 0.3;
-    animation-name: fadeOutOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 0.2s;
-}
-
 .display-column div a {     /*Caption*/
     color: #000000;
 	color: #FFFFFF;
-    font-size: 26px;
+    font-size: 20px;
 }
 
-.display-column div a.overlayed {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-/*PAGE TEXT*/
-.pageTitle {
-    margin: 0 auto;
-    text-align: center;
-    width: 30%;
-
-    padding-top: 100px;
-    color: #FFFFFF;
-	font-size: 26px;
-    text-decoration: underline;
-}
-
+/*ABOUT PAGE*/
 .pageDescription {
     margin: 0 auto;
     text-align: center;
@@ -139,10 +161,9 @@ body {padding: 0; margin:0;}
 
     padding-top: 20px;
     color: #FFFFFF;
-	font-size: 20px;
+	font-size: 12px;
 }
 
-/*ABOUT PAGE*/
 .portrait {
     display: block;
     margin-left: auto;
