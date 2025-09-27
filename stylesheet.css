@@ -1,0 +1,107 @@
+body {padding: 0; margin:0;}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.3;
+	}
+}
+
+/*LINKS*/
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*NAVIGATION BAR*/
+.navbar{        /*Bar*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;       /*Always on top*/
+
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.navbar a {     /*Elements*/
+    float: right;
+    text-align: center;
+    padding: 10px;
+	padding-top: 20px;
+    font-size: 28px;
+}
+
+.navbar a.active {
+    float: right;
+    text-align: center;
+    padding: 10px;
+	padding-top: 20px;
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+.navbar img.logo {
+    float:left;
+    text-align: center;
+    font-size: 26px;
+    padding-left: 5%;
+	height: 80px;
+}
+
+/*DISPLAY*/
+.display_col {
+    text-align:center; 
+}
+
+.display_col div {
+    position:relative; 
+    width:100%; 
+}
+
+.display_col div img {
+    width:100%; 
+    height:auto; 
+    opacity:1; 
+    padding-top: 10px;
+}
+
+.display_col div img.fade {
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+}
+
+.display_col div img.fade:hover {
+    cursor: pointer;
+    opacity: 0.3;
+    animation-name: fadeOutOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+}
+
+
+.display_col div a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+    color:#FFFFFF;
+    font-size: 26px;
+}
