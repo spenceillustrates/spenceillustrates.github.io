@@ -40,7 +40,7 @@ a, a:hover, a:visited, a:active {
     float: right;
     text-align: center;
     padding: 10px;
-	padding-top: 20px;
+    padding-top: 20px;
     font-size: 28px;
 }
 
@@ -48,7 +48,7 @@ a, a:hover, a:visited, a:active {
     float: right;
     text-align: center;
     padding: 10px;
-	padding-top: 20px;
+    padding-top: 20px;
     text-decoration: underline;
     font-size: 28px;
 }
@@ -58,7 +58,29 @@ a, a:hover, a:visited, a:active {
     text-align: center;
     font-size: 26px;
     padding-left: 5%;
-	height: 80px;
+    height: 80px;
+}
+
+/*TEXT*/
+.page_title {
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+
+    padding-top: 100px;
+    color: #FFFFFF;
+    font-size: 26px;
+    text-decoration: underline;
+}
+
+.page_description {
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+
+    padding-top: 20px;
+    color: #FFFFFF;
+    font-size: 12px;
 }
 
 /*DISPLAY*/
@@ -96,12 +118,14 @@ a, a:hover, a:visited, a:active {
 
 
 .display_col div a {
+    color:#FFFFFF;
+    font-size: 26px;
+}
+
+.display_col div a.hidden {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    
-    color:#FFFFFF;
-    font-size: 26px;
 }
