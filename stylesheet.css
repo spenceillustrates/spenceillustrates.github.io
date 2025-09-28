@@ -83,6 +83,10 @@ a, a:hover, a:visited, a:active {
     font-size: 12px;
 }
 
+.about_text {
+    font-size: 20px;
+}
+
 /*DISPLAY*/
 .display_col {
     text-align:center; 
