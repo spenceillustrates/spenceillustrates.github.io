@@ -1,0 +1,21 @@
+{"pieces":[
+	{"title": "DONOTSHOW", "path": "front_cover.jpg"},
+	{"title": "Cover", "path": "full_cover.jpg"},
+	{"title": "DONOTSHOW", "path": "alt_front_cover.jpg"},
+	{"title": "Hamlet’s first soliloquy", "path": "hamlet1.jpg"},
+	{"title": "The Ghost of Old King Hamlet", "path": "hamlet2.jpg"},
+	{"title": "Rosencrantz + Guildenstern", "path": "hamlet3.jpg"},
+	{"title": "The Poisoned Chalice", "path": "hamlet4.jpg"},
+	{"title": "To Be or Not to Be", "path": "hamlet5.jpg"},
+	{"title": "Hamlet and Gertrude Confrontation", "path": "hamlet6.jpg"},
+	{"title": "Hamlet’s death", "path": "hamlet7.jpg"},
+	{"title": "Ophelia's death", "path": "alt_cover_full.jpg"},
+	{"title": "", "path": "hide_hamlet1.jpg"},
+	{"title": "", "path": "hide_hamlet2.jpg"},
+	{"title": "", "path": "hide_hamlet3.jpg"},
+	{"title": "", "path": "hide_hamlet4.jpg"},
+	{"title": "", "path": "hide_hamlet5.jpg"},
+	{"title": "", "path": "hide_hamlet6.jpg"},
+	{"title": "", "path": "hide_hamlet7.jpg"}
+]	
+}
