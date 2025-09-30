@@ -76,12 +76,23 @@ a, a:hover, a:visited, a:active {
 .page_description {
     margin: 0 auto;
     text-align: center;
-    width: 50%;
+    width: 70%;
 
     padding-top: 20px;
     color: #FFFFFF;
     font-size: 20px;
 }
+
+.piece_description {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+
+    padding-top: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
 
 .about_text {
     font-size: 20px;
